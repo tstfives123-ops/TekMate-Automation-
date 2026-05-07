@@ -1,0 +1,15 @@
+{
+  "buildCommand": "echo 'Static site - no build required'",
+  "outputDirectory": ".",
+  "env": {},
+  "regions": [
+    "iad1"
+  ],
+  "functions": {},
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
