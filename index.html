@@ -258,13 +258,217 @@ footer{background:var(--navy);padding:80px 60px 40px;border-top:1px solid var(--
 
 <!-- NAV -->
 <nav id="navbar">
-  <a href="https://github.com/tstfives123-ops/TekMate-Automation-/blob/main/logo.png" class="nav-logo">
-    <div class="logo-mark">TM</div>
-    <div>
-      <div class="logo-text">TekMate</div>
-      <span class="logo-sub">Automation</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TekMate Logo</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      background:#f4f4f4;
+    }
+
+    .logo-container{
+      text-align:center;
+    }
+
+    /* LOGO */
+    .logo{
+      position:relative;
+      width:220px;
+      height:260px;
+      margin:auto;
+    }
+
+    /* Top T Shape */
+    .top-bar{
+      position:absolute;
+      top:0;
+      left:20px;
+      width:180px;
+      height:45px;
+      border:10px solid #0d7774;
+      border-radius:35px;
+      background:white;
+    }
+
+    /* Golden line */
+    .gold-line{
+      position:absolute;
+      top:15px;
+      left:18px;
+      width:145px;
+      height:10px;
+      background:#b88a3b;
+      border-radius:10px;
+    }
+
+    /* Left golden dot */
+    .gold-dot-left{
+      position:absolute;
+      top:10px;
+      left:8px;
+      width:20px;
+      height:20px;
+      background:#b88a3b;
+      border-radius:50%;
+    }
+
+    /* Right golden dot */
+    .gold-dot-right{
+      position:absolute;
+      top:10px;
+      right:8px;
+      width:20px;
+      height:20px;
+      background:#b88a3b;
+      border-radius:50%;
+    }
+
+    /* Center curve */
+    .curve{
+      position:absolute;
+      top:16px;
+      left:92px;
+      width:40px;
+      height:20px;
+      border-bottom:10px solid #b88a3b;
+      border-right:10px solid transparent;
+      border-radius:0 0 20px 0;
+      transform:rotate(12deg);
+    }
+
+    /* Vertical T */
+    .vertical{
+      position:absolute;
+      top:60px;
+      left:88px;
+      width:45px;
+      height:150px;
+      border:10px solid #0d7774;
+      border-radius:30px;
+      background:white;
+    }
+
+    /* Inner white line */
+    .vertical::before{
+      content:"";
+      position:absolute;
+      left:12px;
+      top:10px;
+      width:10px;
+      height:100px;
+      background:white;
+      border-radius:10px;
+    }
+
+    /* Bottom gold dot */
+    .bottom-dot{
+      position:absolute;
+      bottom:10px;
+      left:12px;
+      width:18px;
+      height:18px;
+      background:#b88a3b;
+      border-radius:50%;
+    }
+
+    /* TM symbol */
+    .tm{
+      position:absolute;
+      top:-10px;
+      right:-25px;
+      color:#0d7774;
+      font-weight:bold;
+      font-size:24px;
+    }
+
+    /* Brand Name */
+    .brand{
+      margin-top:20px;
+      font-size:58px;
+      font-weight:bold;
+    }
+
+    .tek{
+      color:#b88a3b;
+    }
+
+    .mate{
+      color:#0d7774;
+    }
+
+    /* Tagline */
+    .tagline{
+      margin-top:5px;
+      font-size:28px;
+      letter-spacing:2px;
+      color:#0d7774;
+    }
+
+    .tagline span{
+      color:#b88a3b;
+    }
+
+    /* Hover Animation */
+    .logo:hover{
+      transform:scale(1.05);
+      transition:0.4s;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="logo-container">
+
+    <div class="logo">
+
+      <div class="tm">TM</div>
+
+      <div class="top-bar">
+        <div class="gold-line"></div>
+        <div class="gold-dot-left"></div>
+        <div class="gold-dot-right"></div>
+        <div class="curve"></div>
+      </div>
+
+      <div class="vertical">
+        <div class="bottom-dot"></div>
+      </div>
+
     </div>
-  </a>
+
+    <div class="brand">
+      <span class="tek">Tek</span><span class="mate">Mate</span>
+    </div>
+
+    <div class="tagline">
+      Makes <span>Living</span> Easy
+    </div>
+
+  </div>
+
+  <script>
+    console.log("TekMate Logo Loaded");
+  </script>
+
+</body>
+</html>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
